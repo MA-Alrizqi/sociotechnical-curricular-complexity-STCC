@@ -144,24 +144,26 @@ report says so explicitly).
 
 ## Using Your Own Data
 
+## Using Your Own Data
+
 The quickest way to see the required format is the fill-in template **`data/STCC_data_format_template.xlsx`** — an Excel workbook with one sheet per file, columns colour-coded by layer, and example rows. Fill it in, then save each sheet as a CSV (the pipeline reads CSV).
 
-Replace the synthetic files in `data/` with your institution's data, delete `data/_SYNTHETIC_EXAMPLE_DATA.txt`, register your column names in `src/config.py` (see the column-roles table in `data/data_dictionary.md`), then run `python stcc_score.py` (score only) or `python run_all.py` (full analysis). Each program needs:
+Follow these steps to run the analysis on your institution's data:
 
-- **Prerequisite list** — `data/prereqs/<Program>_prereqs.csv` with `course, prerequisite` columns (feeds `prereq_network.py` to compute Delay and Blocking).
-- **GPA file** — `data/<Program>_gpa.csv`, one row per student × course × term, with GPA, structural metrics, LEQ items, and demographics.
-- **TTD file** — `data/<Program>_ttd.csv`, one row per student, with aggregated metrics and time-to-degree.
-- 
+1. **Format your files:** Replace the synthetic files in `data/` with your own CSVs and delete `data/_SYNTHETIC_EXAMPLE_DATA.txt`. Each program needs:
+   - **Prerequisite list** — `data/prereqs/<Program>_prereqs.csv` with `course, prerequisite` columns (feeds `prereq_network.py` to compute Delay and Blocking).
+   - **GPA file** — `data/<Program>_gpa.csv`, one row per student × course × term, with GPA, structural metrics, LEQ items, and demographics.
+   - **TTD file** — `data/<Program>_ttd.csv`, one row per student, with aggregated metrics and time-to-degree.
 
-See `data/data_dictionary.md` for the exact column names. Then edit `src/config.py` to:
+2. **Register your variables:** See `data/data_dictionary.md` for exact column names, then edit `src/config.py` to:
+   - Define your programs (`PROGRAMS`) and map raw column names (`COLUMN_RENAMES`).
+   - List the LEQ variables you actually have (`LEQ_VARS`) — the models include only what's present.
+   - Set the IL variables you have (`IL_CATEGORICAL`, `IL_CONTINUOUS`).
+   - Choose the index scale (`INDEX_SCALE`): 100 for a 0–100 index, 10 for 0–10, 1 for a 0–1 proportion.
 
-- Define your programs (`PROGRAMS`) and map raw column names (`COLUMN_RENAMES`).
-- List the LEQ variables you actually have (`LEQ_VARS`) — the models include only what's present.
-- Set the IL variables you have (`IL_CATEGORICAL`, `IL_CONTINUOUS`).
-- Choose the index scale (`INDEX_SCALE`): 100 for a 0–100 index, 10 for 0–10, 1 for a 0–1 proportion.
-- 
+3. **Run the pipeline:** Execute `python stcc_score.py` (for the score only) or `python run_all.py` (for the full analysis).
 
-#### **Note:** *The variables listed above and in the provided templates are variables used in the paper. Institutions/departments may substitute them with their own available data that aligns with the STCC framework layers as explained in the above "What This Framework Does" section.*
+**Note:** The variables listed above and in the provided templates are variables used in the paper. Institutions/departments may substitute them with their own available data that aligns with the STCC framework layers as explained in the above "What This Framework Does" section.
 
 ## Running Steps Individually
 
