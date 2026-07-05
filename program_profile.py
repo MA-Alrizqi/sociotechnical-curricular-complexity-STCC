@@ -50,14 +50,13 @@ REFLECTIVE = {
     "LEQ": ["What classroom practices are supporting student success?",
             "How can exemplar courses be used as positive case studies?",
             "How do student perceptions shape their engagement with learning?"],
-    "IL": ["Who is succeeding and who is struggling as a result of curricular "
-           "structures and experiences?",
-           "What equity gaps might emerge from a lack of consideration of the "
-           "curriculum as a sociotechnical system?",
-            "What efforts can better support students historically "
-            "marginalized in engineering spaces?"],
+    "IL": ["Where does the system produce differential outcomes, and which curricular structures "
+           "and experiences contribute to those patterns?",
+           "What differential outcomes might unintentionally emerge from a lack of consideration of "
+           "curricula as a sociotechnical system?",
+           "What efforts can be leveraged in programs to better support students, particularly those "
+            "whom the system's current design underserves?"],
 }
-
 
 # ---------------------------------------------------------------- helpers
 def _ensure_scores():
