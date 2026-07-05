@@ -9,9 +9,9 @@ data before running the analysis pipeline.
 
 Reference
 ---------
-[Authors] (2025). Curricula as Complex Sociotechnical Systems: A Socio-
-Technical Curricular Complexity (STCC) Systems-Based Framework for
-Understanding and Quantifying Complexity in Engineering Education.
+Mohammed A. Alrizqi & Allison Godwin (2026). Engineering Curricular Analytics as 
+Complex Systems: Introducing, Modeling, and Empirically Testing the Socio-Technical 
+Curricular Complexity (STCC) Framework. Journal of Engineering Education.
 """
 
 from pathlib import Path
