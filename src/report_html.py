@@ -9,8 +9,6 @@ Pure standard library + pandas -- no new dependencies, no server.
 Reads:  results/stcc_scores_by_program.csv  (produced by src/cc_score.py)
 Writes: results/stcc_report.html
 
-All user-facing wording lives in the WORDING block below -- edit there,
-then re-run `python src/report_html.py` (or `python stcc_score.py`).
 """
 
 from datetime import date
@@ -21,14 +19,14 @@ import pandas as pd
 from config import OUTPUT_DIR, DATA_DIR
 
 # ---------------------------------------------------------------------------
-# WORDING -- edit the report's text here
+# report's text
 # ---------------------------------------------------------------------------
 WORDING = {
-    "eyebrow": "Institutional research brief",
+    "eyebrow": "Results Summary Report",
     "title": "Socio-technical curricular complexity",
     "subtitle": "Program-level scores, 0\u2013100",
     "demo_note": ("Demonstration data \u2014 synthetic example; "
-                  "no real students; not citable as results."),
+                  "no real data"),
     "how_to_read": ("How to read: the STCC score averages three layer "
                     "sub-scores with equal weight. Higher means more "
                     "complexity carried by the program \u2014 context-"
@@ -41,6 +39,10 @@ WORDING = {
     "footnote": ("CA = curricular architecture \u00b7 LEQ = learning-"
                  "experience quality \u00b7 IL = individual-level. Exact "
                  "values with CIs in stcc_scores_by_program.csv."),
+    "citation": ("Framework Reference: Mohammed A. Alrizqi & Allison Godwin (2026). "
+                 "Engineering Curricular Analytics as Complex Systems: Introducing, "
+                 "Modeling, and Empirically Testing the Socio-Technical Curricular "
+                 "Complexity (STCC) Framework. <i>Journal of Engineering Education</i>.")
 }
 
 # Okabe-Ito colorblind-safe palette (matches the manuscript figures)
