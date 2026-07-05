@@ -5,9 +5,8 @@ Generate SYNTHETIC, IDEALIZED example data so the STCC pipeline runs out of
 the box. The data is deliberately simplified and stylized -- NOT a realistic
 simulation of student behavior.
 
-*** THIS DATA IS FABRICATED. It contains NO real students and is for
-    demonstration only. It is NOT the data used in the paper and will NOT
-    reproduce the paper's numbers. ***
+*** THIS DATA IS FABRICATED. It contains NO real students data and is meant for
+    demonstration only. ***
 
 It writes, for every program in config.PROGRAMS:
   data/<prog>_gpa.csv          one row per student x course x term
