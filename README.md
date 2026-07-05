@@ -22,8 +22,7 @@ Delay/Blocking metrics, builds the composite index, and writes three deliverable
 
 | Output | What it is |
 |---|---|
-| `results/stcc_report.html` | **Score card per program**:
-                                  STCC score, 95% CI, and CA / LEQ / IL layer bars showing *where* complexity concentrates |
+| `results/stcc_report.html` | **Score card per program**: STCC score, 95% CI, and CA / LEQ / IL layer bars showing *where* complexity concentrates |
 | `results/stcc_scores_by_program.csv` | The same numbers, machine-readable |
 | `results/figures/fig_CC_by_program.png` | Publication-style forest plot |
 
