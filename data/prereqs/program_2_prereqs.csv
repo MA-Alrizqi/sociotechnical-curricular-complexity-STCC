@@ -1,0 +1,12 @@
+course,prerequisite
+C3,C2
+C3,C1
+C5,C2
+C5,C3
+C7,C6
+C8,C1
+C8,C6
+C1,
+C2,
+C4,
+C6,

@@ -1,0 +1,9 @@
+course,delay,blocking,complexity
+C2,2,3,5
+C1,1,4,5
+C3,3,0,3
+C6,3,0,3
+C8,3,0,3
+C5,1,1,2
+C4,1,0,1
+C7,1,0,1
