@@ -43,19 +43,20 @@ FONT = "Calibri,'Segoe UI',Arial,Helvetica,sans-serif"
 REFLECTIVE = {
     "CA": ["Why do the required courses and their sequence matter in student "
            "development and learning?",
-           "Where are key concepts introduced, reinforced, and expected to be "
-           "fully achieved?",
-           "Does the current complexity support student success, or is it "
-           "burdensome complexity inherited from historic norms?"],
-    "LEQ": ["What classroom practices are supporting student success?",
-            "How can exemplar courses be used as positive case studies?",
+           "Where are key concepts introduced, reinforced, and expected for "
+           "students to fully achieve?",
+           "Does the current complexity support student success and outcomes, "
+           "or does it provide burdensome complexity because of historic norms or traditions?"],
+    "LEQ": ["What classroom practices are supporting student success and in which programs?",
+            "How can specific exemplar programs be used as positive case studies to "
+            "improve practices across engineering?",
             "How do student perceptions shape their engagement with learning?"],
     "IL": ["Where does the system produce differential outcomes, and which curricular structures "
            "and experiences contribute to those patterns?",
            "What differential outcomes might unintentionally emerge from a lack of consideration of "
            "curricula as a sociotechnical system?",
            "What efforts can be leveraged in programs to better support students, particularly those "
-            "whom the system's current design underserves?"],
+           "whom the system's current design underserves?"],
 }
 
 # ---------------------------------------------------------------- helpers
