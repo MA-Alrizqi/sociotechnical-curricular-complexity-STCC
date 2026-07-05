@@ -2,6 +2,8 @@
 
 This document describes the standardized variable names expected by the STCC analysis pipeline. Map your institution's raw column names to these before running the code (use `COLUMN_RENAMES` in `config.py`).
 
+> #### Note: The variables listed above and in this template are the ones used in the original paper. Institutions or departments may substitute them with their own available data that aligns with
+> #### the STCC framework layers, as > explained in the "What This Framework Does" section of the GitHub repository README.
 ## Contents
 
 - [Example Rows (exact file format)](#example-rows-exact-file-format)
