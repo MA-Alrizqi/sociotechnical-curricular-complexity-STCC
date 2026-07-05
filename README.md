@@ -6,7 +6,7 @@ A reusable, **runs-out-of-the-box** toolkit for quantifying curricular
 complexity as a multi-layered socio-technical system, and for computing a single
 **STCC composite score (0–100)** per program. Accompanies the paper:
 
-> [Authors] (2026). *Engineering Curricular Analytics as Complex Systems: Introducing, Modeling, and Empirically Testing the Socio-Technical Curricular Complexity (STCC) Framework.* Journal of Engineering Education. DOI: [to be added upon acceptance]
+> Mohammed A. Alrizqi & Allison Godwin (2026). Engineering Curricular Analytics as Complex Systems: Introducing, Modeling, and Empirically Testing the Socio-Technical Curricular Complexity (STCC) Framework. *Journal of Engineering Education*. 
 
 ## Your STCC score in 3 commands
 
@@ -36,13 +36,14 @@ program_7: STCC = 41.2 (95% CI 40.4-42.0), median = 41.3 | CA=39.8 LEQ=60.6 IL=2
 ```
 
 The layer columns answer the *why*: here `program_3` ranks highest because of
-its Curricular Architecture (CA), not its classroom experience (LEQ).
+its Curricular Architecture (CA), not its classroom experience (LEQ) or individual level (IL).
 For the **full analysis pipeline** (mixed models, TTD regression, validation,
 baseline comparisons), run `python run_all.py` instead.
 
 > ## ⚠️ About the bundled data
 >
-> The data in this repository is **synthetic and idealized** — it is **fabricated by `make_example_data.py`** and exists **only** so the pipeline runs out of the box. It contains **no real students**, does **not** model real student behavior, and does **not** reproduce the results reported in the paper. Any numbers it produces are for **demonstration of the workflow only**. Real student data cannot be shared due to FERPA/IRB restrictions; to obtain genuine results, supply your own institutional data (see *Using Your Own Data* below).
+> The data in this repository is **synthetic and idealized** — it is **fabricated by `make_example_data.py`** and exists **only** so the pipeline runs out of the box. It contains **no real students data**, does **not** model real student behavior, and does **not** reproduce the results reported in the paper. Any numbers it produces are for **demonstration of the workflow only**. Real individuals data cannot be shared due to FERPA/IRB restrictions; to obtain genuine results, supply your own institutional data (see *Using Your Own Data* below). 
+
 
 ## Table of Contents
 
@@ -67,26 +68,26 @@ Traditional curricular complexity metrics focus on structural features alone (pr
 
 | Layer | What it captures | Example variables |
 |-------|-----------------|-------------------|
-| **Curricular Architecture (CA)** | The macro-level design of the academic program: how courses are organized, sequenced, and interconnected within the formal curriculum structure | Delay, Blocking, DFW rate, course load |
-| **Learning-Experience Quality (LEQ)** | How content is delivered and experienced by students in classroom environments (pedagogy, instructional quality, supports) | Course-evaluation items (leq_01..leq_11) |
-| **Individual Level (IL)** | Characteristics of the individuals navigating the system | Demographics, prior preparation, first-gen status |
+| **Curricular Architecture (CA)** | The macro-level design of the academic program: how courses are organized, sequenced, and interconnected within the formal curriculum structure | e.g.,  DFW rate and course load |
+| **Learning-Experience Quality (LEQ)** | How content is delivered and experienced by students in classroom environments (pedagogy, instructional quality, supports) | e.g., course qulaity and support availability | 
+| **Individual Level (IL)** | Characteristics of the individuals navigating the system | e.g., Demographics, and first-gen status |
 
 The toolkit fits linear mixed models (GPA) and OLS (time-to-degree), compares STCC models against structure-only baselines, and computes a program-level **STCC composite index** (0–100 scale).
 
 ## Quick Start: full pipeline (no data needed)
 
-The repository ships with **synthetic example data** so you can see the full pipeline run before adapting it to your own institution:
+The repository ships with **synthetic example data** so you can see and get an idea of the full pipeline run before adapting it to your own institution:
 
 ```bash
 pip install -r requirements.txt
 python run_all.py
 ```
 
-`run_all.py` generates fabricated example data (if none is present) and runs every step, writing all outputs to `results/`. The example data is **fabricated** — it contains no real students and does **not** reproduce the paper's numbers; it only demonstrates that the pipeline works.
+`run_all.py` generates fabricated example data (if none is present) and runs every step, writing all outputs to `results/`. The example data is **synthesised and fabricated** and does **not** reproduce the paper's numbers; it only demonstrates that the pipeline works.
 
 > ⏱️ The validation step runs 100 permutation refits per program and can take a few minutes. Lower `PERMUTATION_ITERS` in `src/config.py` for a faster check.
 
-## How the Example Data Is Generated (and its limitations)
+## How the Example Data Is Synthesised (and its limitations)
 
 `make_example_data.py` produces deliberately **simple, idealized** data — not a realistic simulation:
 
@@ -96,7 +97,7 @@ python run_all.py
 - Prerequisite graphs are small random acyclic graphs; Delay/Blocking are computed from them.
 - Demographics are assigned at random.
 
-Because the relationships are hand-built and stylized, the example **cannot** reproduce the paper's findings and should **never** be interpreted as empirical evidence. Its only purpose is to let anyone confirm the code runs end to end before plugging in real data. When you run any step, a banner is printed reminding you that synthetic data is in use.
+Because the relationships are hand-built, the example **cannot** reproduce the paper's findings and should **never** be interpreted as empirical evidence. When you run any step, a banner is printed reminding you that synthetic data is in use.
 
 ## Repository Structure
 
@@ -125,8 +126,8 @@ stcc-repo/
 
 ## Single-program deep dive
 
-For any one program — including when you only have **your own department's
-data and no comparison programs** — run:
+In case of only one program — including when you only have **your own department's
+data and no other programs** — run:
 
 ```bash
 python program_profile.py --program <program_key>
@@ -138,8 +139,8 @@ LEQ) sorted so gateway courses surface first, the prerequisite network, the
 program's own fitted model coefficients (after `run_all.py`), an exploratory
 entry-cohort trend, and the framework's reflective questions. In
 single-program mode the 0–100 score is normalized within your program's own
-variation and is not comparable to multi-program or published scores — the
-report says so explicitly.
+variation and is not comparable to multi-program or published scores (the
+report says so explicitly).
 
 ## Using Your Own Data
 
@@ -188,15 +189,15 @@ The pipeline is built to tolerate messy real-world data: programs whose model is
 
 ## Data Availability
 
-**Real student data cannot be shared** due to IRB/FERPA restrictions — standard in curricular analytics research using institutional records. The code itself is the methodological contribution: it documents the full analytical pipeline so researchers can apply the STCC framework to their own data. The bundled example data is synthetic and exists only to make the pipeline runnable.
+**Real data cannot be shared** due to IRB/FERPA restrictions — standard in curricular analytics research using institutional records. The code itself is a methodological contribution: it documents the full analytical pipeline so researchers can apply the STCC framework to their own data. The bundled example data is synthetic and exists only to make the pipeline runnable.
 
 ## Citation
 
 ```
-[Authors] (2026). Engineering Curricular Analytics as Complex Systems:
+Mohammed A. Alrizqi & Allison Godwin (2026). Engineering Curricular Analytics as Complex Systems:
 Introducing, Modeling, and Empirically Testing the Socio-Technical Curricular
-Complexity (STCC) Framework. Journal of Engineering Education.
-DOI: [to be added upon acceptance]
+Complexity (STCC) Framework. *Journal of Engineering Education*.
+
 ```
 
 ## License
