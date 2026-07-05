@@ -151,6 +151,7 @@ Replace the synthetic files in `data/` with your institution's data, delete `dat
 - **Prerequisite list** — `data/prereqs/<Program>_prereqs.csv` with `course, prerequisite` columns (feeds `prereq_network.py` to compute Delay and Blocking).
 - **GPA file** — `data/<Program>_gpa.csv`, one row per student × course × term, with GPA, structural metrics, LEQ items, and demographics.
 - **TTD file** — `data/<Program>_ttd.csv`, one row per student, with aggregated metrics and time-to-degree.
+- 
 
 See `data/data_dictionary.md` for the exact column names. Then edit `src/config.py` to:
 
@@ -158,8 +159,9 @@ See `data/data_dictionary.md` for the exact column names. Then edit `src/config.
 - List the LEQ variables you actually have (`LEQ_VARS`) — the models include only what's present.
 - Set the IL variables you have (`IL_CATEGORICAL`, `IL_CONTINUOUS`).
 - Choose the index scale (`INDEX_SCALE`): 100 for a 0–100 index, 10 for 0–10, 1 for a 0–1 proportion.
+- 
 
-**Note:** *The variables listed above and in the provided templates are variables used in the paper. Institutions/departments may substitute them with their own available data that aligns with the STCC framework layers as explained in the above "What This Framework Does" section.*
+###**Note:** *The variables listed above and in the provided templates are variables used in the paper. Institutions/departments may substitute them with their own available data that aligns with the STCC framework layers as explained in the above "What This Framework Does" section.*
 
 ## Running Steps Individually
 
