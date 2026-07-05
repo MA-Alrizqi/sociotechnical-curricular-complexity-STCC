@@ -161,7 +161,7 @@ See `data/data_dictionary.md` for the exact column names. Then edit `src/config.
 - Choose the index scale (`INDEX_SCALE`): 100 for a 0–100 index, 10 for 0–10, 1 for a 0–1 proportion.
 - 
 
-###**Note:** *The variables listed above and in the provided templates are variables used in the paper. Institutions/departments may substitute them with their own available data that aligns with the STCC framework layers as explained in the above "What This Framework Does" section.*
+#### **Note:** *The variables listed above and in the provided templates are variables used in the paper. Institutions/departments may substitute them with their own available data that aligns with the STCC framework layers as explained in the above "What This Framework Does" section.*
 
 ## Running Steps Individually
 
