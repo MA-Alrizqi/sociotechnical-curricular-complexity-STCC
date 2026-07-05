@@ -102,7 +102,7 @@ Because the relationships are hand-built, the example **cannot** reproduce the p
 ## Repository Structure
 
 ```
-stcc-repo/
+stcc-curricular-complexity/
 ├── stcc_score.py                  # ← THE one-command score: index + HTML report
 ├── program_profile.py             # Single-program deep dive (courses, network, coefficients)
 ├── run_all.py                     # Full pipeline runner (models + validation)
