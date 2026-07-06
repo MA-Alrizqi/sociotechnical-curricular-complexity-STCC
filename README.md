@@ -50,8 +50,9 @@ baseline comparisons), run `python run_all.py` instead.
 - [What This Framework Does](#what-this-framework-does)
 - [Your STCC score in 3 commands](#your-stcc-score-in-3-commands)
 - [Quick Start](#quick-start-no-data-needed)
-- [How the Example Data Is Generated](#how-the-example-data-is-generated-and-its-limitations)
+- [How the Example Data Is Synthesised](#how-the-example-data-is-synthesised-and-its-limitations)
 - [Repository Structure](#repository-structure)
+- [Single-program deep dive](#single-program-deep-dive)
 - [Using Your Own Data](#using-your-own-data)
 - [Running Steps Individually](#running-steps-individually)
 - [The STCC Composite Index](#the-stcc-composite-index)
@@ -102,7 +103,7 @@ Because the relationships are hand-built, the example **cannot** reproduce the p
 ## Repository Structure
 
 ```
-stcc-curricular-complexity/
+sociotechnical-curricular-complexity-STCC/
 ├── stcc_score.py                  # ← THE one-command score: index + HTML report
 ├── program_profile.py             # Single-program deep dive (courses, network, coefficients)
 ├── run_all.py                     # Full pipeline runner (models + validation)
