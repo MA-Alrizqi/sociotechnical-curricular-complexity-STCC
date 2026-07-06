@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the software (via the DOI below) and the associated paper."
+title: "STCC: Socio-Technical Curricular Complexity Framework"
+abstract: >-
+  A reusable, runs-out-of-the-box Python toolkit for quantifying curricular
+  complexity as a multi-layered socio-technical system. It computes a
+  program-level STCC composite score (0-100) from three layers (Curricular
+  Architecture, Learning-Experience Quality, and Individual-Level factors),
+  fits GPA (linear mixed-effects) and time-to-degree (regression) models
+  against structure-only baselines, and produces program- and single-program
+  diagnostic reports. Companion code for the Journal of Engineering Education
+  paper on the STCC framework.
+type: software
+authors:
+  - family-names: "Alrizqi"
+    given-names: "Mohammed A."
+  - family-names: "Godwin"
+    given-names: "Allison"
+license: MIT
+repository-code: "https://github.com/DrAlrizqi/stcc-curricular-complexity"
+# --- After Zenodo mints the DOI, uncomment and paste the CONCEPT DOI here ---
+# doi: 10.5281/zenodo.XXXXXXX
+# version: 1.0.0
+# date-released: 2026-XX-XX
+keywords:
+  - curricular analytics
+  - curricular complexity
+  - engineering education
+  - learning analytics
+  - mixed-effects models
+  - socio-technical systems
+preferred-citation:
+  type: article
+  title: >-
+    Engineering Curricular Analytics as Complex Systems: Introducing,
+    Modeling, and Empirically Testing the Socio-Technical Curricular
+    Complexity (STCC) Framework
+  authors:
+    - family-names: "Alrizqi"
+      given-names: "Mohammed A."
+    - family-names: "Godwin"
+      given-names: "Allison"
+  journal: "Journal of Engineering Education"
+  year: 2026
+  # doi: 10.xxxx/xxxxx   # add the article DOI once the paper is published
