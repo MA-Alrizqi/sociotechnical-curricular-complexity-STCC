@@ -6,7 +6,7 @@ A reusable, **runs-out-of-the-box** toolkit for quantifying curricular
 complexity as a multi-layered socio-technical system, and for computing a single
 **STCC composite score (0–100)** per program. Accompanies the paper:
 
-> Mohammed A. Alrizqi & Allison Godwin (2026). Engineering Curricular Analytics as Complex Systems: Introducing, Modeling, and Empirically Testing the Socio-Technical Curricular Complexity (STCC) Framework. *Journal of Engineering Education*. 
+> Mohammed A. Alrizqi & Allison Godwin (2026). Engineering Curricular Analytics as Complex Systems: Introducing, Modeling, and Empirically Testing the Sociotechnical Curricular Complexity (STCC) Framework. *Journal of Engineering Education*. 
 
 ## Your STCC score in 3 commands
 
@@ -195,14 +195,27 @@ The pipeline is built to tolerate messy real-world data: programs whose model is
 
 **Real data cannot be shared** due to IRB/FERPA restrictions — standard in curricular analytics research using institutional records. The code itself is a methodological contribution: it documents the full analytical pipeline so researchers can apply the STCC framework to their own data. The bundled example data is synthetic and exists only to make the pipeline runnable.
 
+
 ## Citation
 
-```
-Mohammed A. Alrizqi & Allison Godwin (2026). Engineering Curricular Analytics as Complex Systems:
-Introducing, Modeling, and Empirically Testing the Socio-Technical Curricular
-Complexity (STCC) Framework. *Journal of Engineering Education*.
+This repository accompanies a research paper. **Cite the paper** for the STCC
+framework, methods, and findings. **Cite the software** (via its DOI) if you
+use or adapt the code. If you use the code in your own study, please cite both.
 
-```
+**Paper:**
+> Alrizqi, M. A., & Godwin, A. (2026). Engineering Curricular Analytics as
+> Complex Systems: Introducing, Modeling, and Empirically Testing the
+> Sociotechnical Curricular Complexity (STCC) Framework. *Journal of
+> Engineering Education*.
+
+**Software:**
+> Alrizqi, M. A., & Godwin, A. (2026). *STCC: Sociotechnical Curricular
+> Complexity Framework* (Version 1.0.0) [Software]. Zenodo.
+> https://doi.org/10.5281/zenodo.XXXXXXX
+
+For formatted citations (APA, BibTeX), see [`CITATION.cff`](CITATION.cff) or
+click **"Cite this repository"** in the sidebar.
+
 
 ## License
 
