@@ -12,23 +12,26 @@ abstract: >-
   paper on the STCC framework.
 type: software
 authors:
-  - family-names: "Alrizqi"
-    given-names: "Mohammed A."
-  - family-names: "Godwin"
-    given-names: "Allison"
+  - family-name: "Alrizqi"
+    given-name: "Mohammed A."
+  - family-name: "Godwin"
+    given-name: "Allison"
 license: MIT
-repository-code: "https://github.com/DrAlrizqi/stcc-curricular-complexity"
-# --- After Zenodo mints the DOI, uncomment and paste the CONCEPT DOI here ---
+repository-code: "https://github.com/MA-Alrizqi/stcc-curricular-complexity"
 # doi: 10.5281/zenodo.XXXXXXX
 # version: 1.0.0
-# date-released: 2026-XX-XX
+# date-released: 2026-07-06
 keywords:
   - curricular analytics
   - curricular complexity
   - engineering education
+  - higher education
   - learning analytics
+  - data mining
+  - regression models
   - mixed-effects models
   - socio-technical systems
+
 preferred-citation:
   type: article
   title: >-
@@ -36,10 +39,9 @@ preferred-citation:
     Modeling, and Empirically Testing the Socio-Technical Curricular
     Complexity (STCC) Framework
   authors:
-    - family-names: "Alrizqi"
-      given-names: "Mohammed A."
-    - family-names: "Godwin"
-      given-names: "Allison"
+    - family-name: "Alrizqi"
+      given-name: "Mohammed A."
+    - family-name: "Godwin"
+      given-name: "Allison"
   journal: "Journal of Engineering Education"
   year: 2026
-  # doi: 10.xxxx/xxxxx   # add the article DOI once the paper is published
