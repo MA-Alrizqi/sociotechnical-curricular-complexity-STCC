@@ -12,10 +12,10 @@ abstract: >-
   paper on the STCC framework.
 type: software
 authors:
-  - family-name: "Alrizqi"
-    given-name: "Mohammed A."
-  - family-name: "Godwin"
-    given-name: "Allison"
+  - family-names: "Alrizqi"
+    given-names: "Mohammed A."
+  - family-names: "Godwin"
+    given-names: "Allison"
 license: MIT
 repository-code: "https://github.com/MA-Alrizqi/stcc-curricular-complexity"
 # doi: 10.5281/zenodo.XXXXXXX
@@ -31,7 +31,6 @@ keywords:
   - regression models
   - mixed-effects models
   - sociotechnical systems
-
 preferred-citation:
   type: article
   title: >-
@@ -39,9 +38,9 @@ preferred-citation:
     Modeling, and Empirically Testing the Sociotechnical Curricular
     Complexity (STCC) Framework
   authors:
-    - family-name: "Alrizqi"
-      given-name: "Mohammed A."
-    - family-name: "Godwin"
-      given-name: "Allison"
+    - family-names: "Alrizqi"
+      given-names: "Mohammed A."
+    - family-names: "Godwin"
+      given-names: "Allison"
   journal: "Journal of Engineering Education"
   year: 2026
