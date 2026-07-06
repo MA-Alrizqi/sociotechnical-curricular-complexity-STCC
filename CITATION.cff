@@ -1,9 +1,9 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite both the software (via the DOI below) and the associated paper."
-title: "STCC: Socio-Technical Curricular Complexity Framework"
+title: "STCC: Sociotechnical Curricular Complexity Framework"
 abstract: >-
   A reusable, runs-out-of-the-box Python toolkit for quantifying curricular
-  complexity as a multi-layered socio-technical system. It computes a
+  complexity as a multi-layered sociotechnical system. It computes a
   program-level STCC composite score (0-100) from three layers (Curricular
   Architecture, Learning-Experience Quality, and Individual-Level factors),
   fits GPA (linear mixed-effects) and time-to-degree (regression) models
@@ -30,13 +30,13 @@ keywords:
   - data mining
   - regression models
   - mixed-effects models
-  - socio-technical systems
+  - sociotechnical systems
 
 preferred-citation:
   type: article
   title: >-
     Engineering Curricular Analytics as Complex Systems: Introducing,
-    Modeling, and Empirically Testing the Socio-Technical Curricular
+    Modeling, and Empirically Testing the Sociotechnical Curricular
     Complexity (STCC) Framework
   authors:
     - family-name: "Alrizqi"
