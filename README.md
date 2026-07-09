@@ -212,7 +212,7 @@ use or adapt the code. If you use the code in your own study, please cite both.
 **Software:**
 > Alrizqi, M. A., & Godwin, A. (2026). *STCC: Sociotechnical Curricular
 > Complexity Framework* (Version 1.0.0) [Software]. Zenodo.
-> https://doi.org/10.5281/zenodo.XXXXXXX
+> https://doi.org/10.5281/zenodo.21271205
 
 For formatted citations (APA, BibTeX), see [`CITATION.cff`](CITATION.cff) or
 click **"Cite this repository"** in the sidebar.
