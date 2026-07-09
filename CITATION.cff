@@ -18,9 +18,9 @@ authors:
     given-names: "Allison"
 license: MIT
 repository-code: "https://github.com/MA-Alrizqi/stcc-curricular-complexity"
-# doi: 10.5281/zenodo.XXXXXXX
-# version: 1.0.0
-# date-released: 2026-07-06
+doi: 10.5281/zenodo.21271205
+version: 1.0.0
+date-released: 2026-07-08
 keywords:
   - curricular analytics
   - curricular complexity
